@@ -2,15 +2,15 @@
 
 ##Overview
 I follow the following steps for the project  
-1. load the driving log in memory
-2. visualize the images and steering angle
-3. preprocessing
-4. build the model
-5. feed the images/angle to model in batches using generator
-6. fit the model 
-7. test the model
-8. save the model
-9. drive on track using the saved model
+1. load the driving log in memory  
+2. visualize the images and steering angle  
+3. preprocessing  
+4. build the model  
+5. feed the images/angle to model in batches using generator  
+6. fit the model   
+7. test the model  
+8. save the model  
+9. drive on track using the saved model  
 
 
 ##Preprocessing
