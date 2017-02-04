@@ -21,7 +21,7 @@ Second, data we collected from training track has images with steering on right.
 
 ##Model architecture
 provides sufficient details of the characteristics and qualities of the architecture, such as the type of model used, the number of layers, the size of each layer. Visualizations emphasizing particular qualities of the architecture are encouraged.
-
+![model architecture](images/model_architecture.png)
 
 ##Training dataset 
 I am using the training datasets provided by Udacity. I found it more accurate than the data I collected. The part of that training using keyboards does not produce the quality datasets. 
