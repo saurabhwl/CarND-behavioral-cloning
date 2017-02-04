@@ -15,9 +15,20 @@ I follow the following steps for the project
 
 ##Preprocessing
 Information such as how the dataset was generated and examples of images from the dataset should be included.
-Preprocessing image is the most critical part. I took the following steps to ensure that I am feeding the quality data to model so it will train properly. In the captured images, there are a lot of background noise, trees and mountains  etc. They are not useful in training. They do create distraction in the model. So it is very important to crop the image to right size to only feed the portion of image that are important for model to learn. 
+Preprocessing image is the most critical part. I took the following steps to ensure that I am feeding the quality data to model so it will train properly. In the captured images, there are a lot of background noise, trees and mountains  etc. They are not useful in training. They do create distraction in the model. So it is very important to crop the image to right size to only feed the portion of image that are important for model to learn. Here are some sample images after the cropping 
 
-Second, data we collected from training track has images with steering on right. It is skew towards the steering towards right. To tackle that, I flip the images so that the data is more balanced. third, we have images from left, right and center camera along with steering angles. We need to adjust steering angle from left and right camera to get the correct input to our model. 
+![cropped image](images/cropped.png)
+
+
+Second, data we collected from training track has images with steering on right. It is skew towards the steering towards right. To tackle that, I flip the images so that the data is more balanced. 
+
+![flipped image](images/flipped.png)
+
+third, we have images from left, right and center camera along with steering angles. We need to adjust steering angle from left and right camera to get the correct input to our model. 
+
+forth, we normalize the image. Here are some sample of images after normalization
+
+![normalized image](images/normalized.png)
 
 ##Model architecture
 provides sufficient details of the characteristics and qualities of the architecture, such as the type of model used, the number of layers, the size of each layer. Visualizations emphasizing particular qualities of the architecture are encouraged.
