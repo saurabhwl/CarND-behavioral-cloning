@@ -20,7 +20,7 @@ Preprocessing image is the most critical part. Here are the images and angle sam
 ![raw images](images/images.png)
 ![histrogramOfSteeringAngle](images/histrogramOfSteeringAngle.png)
 
-I took the following steps to ensure that I am feeding the quality data to model so it will train properly. In the raw images, there are a lot of background noise, trees and mountains  etc. They are not useful in training. They do create distraction in the model. So it is very important to crop the image to right size to only feed the portion of image that are important for model to learn. I cropped the images and selected only "[65:145:3, 0:-1:3, :]" area. That leave only image dimension of (27, 107, 3). Here are some sample images after the cropping
+I took the following steps to ensure that I am feeding the quality data to model so it will train properly. In the raw images, there are a lot of background noise, trees and mountains  etc. They are not useful in training. They do create distraction in the model. So it is very important to crop the image to right size to only feed the portion of image that are important for model to learn. I cropped the images and selected only [65:145:3, 0: -1:3, :] area. That leave only image dimension of (27, 107, 3). Here are some sample images after the cropping
 
 ![cropped image](images/cropped.png)
 
