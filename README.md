@@ -29,7 +29,7 @@ Second, data I collected from training track has images with steering on right. 
 
 ![flipped image](images/flipped.png)
 
-third, I have images from left, right and center camera along with steering angles. We need to adjust steering angle from left and right camera to get the correct input to our model. Also most of the angle in dataset are zero. Adjusting these angle give us more diversed datasets. I use +/- .20 to steering angle of the images of left and right camera. 
+third, I have images from left, right and center camera along with steering angles. We need to adjust steering angle from left and right camera to get the correct input to our model. Also most of the angle in dataset are zero. Adjusting these angle give us more diversed datasets. I added +/- .20 to steering angle of the images of left and right camera. 
 
 ##feed the images/angle using generator  
 I used generator to feed the images and angle to model. Instead of loading all images in memeory, the generator will iterate over and fetch only batch of images from disk. It allow me to train the model using a large size of dataset.  
