@@ -18,7 +18,7 @@ import random
 # Some useful constants
 DRIVING_LOG_FILE = './data/driving_log.csv'
 IMG_PATH = './data/'
-STEERING_COEFFICIENT = 0.229
+STEERING_COEFFICIENT = 0.21
 input_shape = (27, 107, 3)
 NO_IMAGES = 3
 

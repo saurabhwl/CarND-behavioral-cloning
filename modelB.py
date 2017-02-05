@@ -18,7 +18,7 @@ activation_relu = 'relu'
 # Source:  https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf
 model = Sequential()
 
-model.add(Lambda(lambda x: x / 127.5 - 1.0, input_shape=(64, 64, 3)))
+model.add(Lambda(lambda x: x / 127.5 - 1.0, input_shape=helper.input_shape))
 
 # starts with five convolutional and maxpooling layers
 model.add(Convolution2D(24, 5, 5, border_mode='same', subsample=(2, 2)))
