@@ -44,7 +44,7 @@ I am using the training datasets provided by Udacity. I found it more accurate t
 ##Training and Testing 
 Here are the different scenarios I tested. I experiement with two different architecture. One is baseed on NVIDIA's End to End Learning for Self-Driving Cars paper ( ModelB). And anoher one is described  https://github.com/wonjunee/behavioral-cloning ( ModelA). I stick with model A as it was giving better results on both tracks.  
 
-|  Model | Steering Angle | Iters | batch | Learning rate | preprocess | Driving | Time on Track 2  |  Loss | Accuracy |
+|  Model | Steer Angle | Iters | batch | Learning rate | preprocess | Driving | Time on Track 2  |  Loss | Accuracy |
 |  ------ | ------ | :------ | :------ | ------ | ------ | ------ | ------ | ------: | ------: |
 |  Model A | 0.17 | 8 | 64 | 0.0012 | crop +normalize +flip | Middle of the road | 28 sec | 0.0145 | 0.1937 |
 |  Model B | 0.2 | 8 | 64 | 0.0001 | crop +normalize +flip | Went offroad |  | 0.0201 | 0.1612 |
@@ -52,7 +52,7 @@ Here are the different scenarios I tested. I experiement with two different arch
 |  Model A | 0.17 | 5 | 64 | 0.0015 | crop +normalize +flip | Went offroad at gap of red traffic lanes |  | 0.0157 | `0.185` |
 |  Model A | 0.17 | 5 | 64 | 0.0015 | crop +normalize |  |  | `0.015` | `0.176` |
 |  Model A | 0.17 | 8 | 64 | 0.001 | crop +normalize +flip |  |  | 0.0134 | `0.173` |
-|  Model A + 2 additional dropouts | 0.17 | 8 | 64 | 0.001 | crop +normalize +flip | Offroad and sink in the lake |  | 0.0149 | `0.17` |
+|  Model A + 2 addl dropouts | 0.17 | 8 | 64 | 0.001 | crop +normalize +flip | Offroad and sink in the lake |  | 0.0149 | `0.17` |
 |  Model A |  | 10 | 64 | default | crop +normalize | Offroad |  | 0.014 | `0.576` |
 |  Model A | 0.21 | 5 | 64 | 0.0015 | crop(27,107,3) +normalize +flip | middle of road | 2 mins+ | 0.015 | `0.456` |
 |  Model A | 0.2 | 10 | 64 | 0.0015 | crop(27,107,3) +normalize +flip | touching lane sometime.  | 2 mins+ | 0.0102 | 0.1826 |
