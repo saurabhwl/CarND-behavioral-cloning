@@ -17,6 +17,7 @@ The goal of this project is to clone the driving behavious in a model using deep
 ##Preprocessing
 
 Preprocessing image is the most critical part. Here are the images and angle sample before preprocessing. 
+![raw images](images/images.png)
 ![histrogramOfSteeringAngle](images/histrogramOfSteeringAngle.png)
 
 I took the following steps to ensure that I am feeding the quality data to model so it will train properly. In the captured images, there are a lot of background noise, trees and mountains  etc. They are not useful in training. They do create distraction in the model. So it is very important to crop the image to right size to only feed the portion of image that are important for model to learn. Here are some sample images after the cropping 
