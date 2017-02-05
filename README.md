@@ -36,12 +36,14 @@ I used generator to feed the images and angle to model. Instead of loading all i
 ##Model architecture
 (Reference: https://github.com/wonjunee/behavioral-cloning)
 ![model architecture](images/model.png)
+Total params: 16663
 
 ##Training dataset 
 I am using the training datasets provided by Udacity. I found it more accurate than the data I collected. The part of that training using keyboards does not produce the quality datasets. 
 
 ##Training and Testing 
 Here are the different scenarios I tested. I experiement with two different architecture. One is baseed on NVIDIA's End to End Learning for Self-Driving Cars paper ( ModelB). And anoher one is described  https://github.com/wonjunee/behavioral-cloning ( ModelA). I stick with model A as it was giving better results on both tracks.  
+
 |  Model | Steering Angle | Iterations | batch size | Learning rate | image preprocessing | Driving Behaviour | Time on Track 2  | Val Loss | Val Accuracy |
 |  ------ | ------ | :------ | :------ | ------ | ------ | ------ | ------ | ------: | ------: |
 |  Model A | 0.17 | 8 | 64 | 0.0012 | crop+normalize+flip | Middle of the road | 28 sec | 0.0145 | 0.1937 |
@@ -54,4 +56,3 @@ Here are the different scenarios I tested. I experiement with two different arch
 |  Model A |  | 10 | 64 | default | crop+normalize | Offroad |  | 0.014 | `0.576` |
 |  Model A | 0.21 | 5 | 64 | 0.0015 | crop(27,107,3) +normalize+flip | middle of road | 2 mins+ | 0.015 | `0.456` |
 |  Model A | 0.2 | 10 | 64 | 0.0015 | crop(27,107,3)+normalize+flip | touching lane sometime.  | 2 mins+ | 0.0102 | 0.1826 |
-
