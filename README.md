@@ -20,7 +20,7 @@ Preprocessing image is the most critical part. Here are the images and angle sam
 ![raw images](images/images.png)
 ![histrogramOfSteeringAngle](images/histrogramOfSteeringAngle.png)
 
-I took the following steps to ensure that I am feeding the quality data to model so it will train properly. In the captured images, there are a lot of background noise, trees and mountains  etc. They are not useful in training. They do create distraction in the model. So it is very important to crop the image to right size to only feed the portion of image that are important for model to learn. Here are some sample images after the cropping 
+I took the following steps to ensure that I am feeding the quality data to model so it will train properly. In the raw images, there are a lot of background noise, trees and mountains  etc. They are not useful in training. They do create distraction in the model. So it is very important to crop the image to right size to only feed the portion of image that are important for model to learn. Here are some sample images after the cropping 
 
 ![cropped image](images/cropped.png)
 
@@ -29,7 +29,7 @@ Second, data I collected from training track has images with steering on right. 
 
 ![flipped image](images/flipped.png)
 
-third, I have images from left, right and center camera along with steering angles. We need to adjust steering angle from left and right camera to get the correct input to our model. Also most of the angle in dataset are zero. Adjusting these angle give us more diversed datasets. 
+third, I have images from left, right and center camera along with steering angles. We need to adjust steering angle from left and right camera to get the correct input to our model. Also most of the angle in dataset are zero. Adjusting these angle give us more diversed datasets. I use +/- .20 to steering angle of the images of left and right camera. 
 
 ##feed the images/angle using generator  
 I used generator to feed the images and angle to model. Instead of loading all images in memeory, the generator will iterate over and fetch only batch of images from disk. It allow me to train the model using a large size of dataset.  
