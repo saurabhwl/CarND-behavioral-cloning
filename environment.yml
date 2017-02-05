@@ -1,0 +1,19 @@
+name: behavioral_cloning
+dependencies:
+- pip >= 9
+- jupyter
+- numpy
+- scipy
+- matplotlib
+- scikit-learn
+- h5py
+- pillow
+- pandas
+- menpo::opencv3
+- more-itertools
+- pip:
+  - tensorflow >= 0.12.0rc1
+  - keras
+  - flask-socketio
+  - eventlet
+  - tqdm
