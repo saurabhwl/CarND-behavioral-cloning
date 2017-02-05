@@ -44,7 +44,7 @@ I am using the training datasets provided by Udacity. I found it more accurate t
 ##Training and Testing 
 Here are the different scenarios I tested. I experiement with two different architecture. One is baseed on NVIDIA's End to End Learning for Self-Driving Cars paper ( ModelB). And anoher one is described  https://github.com/wonjunee/behavioral-cloning ( ModelA). I stick with model A as it was giving better results on both tracks.  
 
-|  Model | Steering Angle | Iterations | batch size | Learning rate | image preprocessing | Driving Behaviour | Time on Track 2  | Val Loss | Val Accuracy |
+|  Model | Steering Angle | Iterations | batch size | Learning rate | preprocessing | Driving | Time on Track 2  |  Loss | Accuracy |
 |  ------ | ------ | :------ | :------ | ------ | ------ | ------ | ------ | ------: | ------: |
 |  Model A | 0.17 | 8 | 64 | 0.0012 | crop+normalize+flip | Middle of the road | 28 sec | 0.0145 | 0.1937 |
 |  Model B | 0.2 | 8 | 64 | 0.0001 | crop+normalize+flip | Went offroad |  | 0.0201 | 0.1612 |
